@@ -13,8 +13,7 @@ services:
       MYSQL_ROOT_PASSWORD: 1234ci2
   webserver:
     image: sirawat21/php
-    command: apt-get install pdo-mysql php5-mysql
-    command: systemctl restart apache2
+    command: apt-get install pdo-mysql php5-mysql | systemctl restart apache2
     ports:
       - "8888:80"
     volumes:
