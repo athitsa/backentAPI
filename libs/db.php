@@ -2,9 +2,9 @@
 class Condb {
 	private $db = null;
 	function __construct($dbNameParam){
-        $serverName = "localhost";
+        $serverName = "database";
         $userName = "root";
-        $userPassword = "";
+        $userPassword = "1234ci2";
         $dbName = $dbNameParam;
 		// $dbName = "athita";
 		// $dbName = "athito";
