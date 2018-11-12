@@ -2,14 +2,23 @@
 class Condb {
 	private $db = null;
 	function __construct($dbNameParam){
-        $serverName = "database";
+		$serverName = "localhost";
         $userName = "root";
-        $userPassword = "1234ci2";
+        $userPassword = "";
         $dbName = $dbNameParam;
 		// $dbName = "athita";
 		// $dbName = "athito";
 		$this->db = new PDO("mysql:host=$serverName;dbname=$dbName;charset=utf8", $userName, $userPassword);
 	}
+
+    //     $serverName = "database";
+    //     $userName = "root";
+    //     $userPassword = "1234ci2";
+    //     $dbName = $dbNameParam;
+	// 	// $dbName = "athita";
+	// 	// $dbName = "athito";
+	// 	$this->db = new PDO("mysql:host=$serverName;dbname=$dbName;charset=utf8", $userName, $userPassword);
+	// }
 	public function db_get_status(){
 		return $this->db;
 	}

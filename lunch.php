@@ -44,5 +44,5 @@ $fod = lunch($menu_food);
 //echo Json_encode($menu_food, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
  $fruit = filter_fruit($measure_result_fruit);
  $menu_filter_fruit =  sort_fruit($measure_result_fruit);
-// echo Json_encode($menu_filter_fruit, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
-print_r($fod);
+echo Json_encode($fod, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
+// print_r($fod);
