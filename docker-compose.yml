@@ -33,4 +33,3 @@ services:
     environment:
       MYSQL_USERNAME: root
       MYSQL_ROOT_PASSWORD: 1234ci2
-      PMA_HOST: database
