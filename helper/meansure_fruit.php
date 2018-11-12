@@ -1,6 +1,6 @@
 <?php
-function meansure_disease($info_disease){
-    $con = new Condb('athita'); //open database
+function meansure_fruit($info_disease){
+    $con = new Condb('fruit'); //open database
     // set sql query
     $sql_name = "SELECT instance_name, th_name, en_name FROM `mytable` ORDER BY id ASC";
     $sql_multiply = "SELECT ".$info_disease[1]." FROM `mytable` ORDER BY id ASC";
@@ -44,7 +44,7 @@ function meansure_disease($info_disease){
         ]);
         array_push($result,$counting);
     }
-
+    // return $result;
     $num_max = max($result);
 
     arsort($result);
@@ -54,8 +54,6 @@ function meansure_disease($info_disease){
         $array_search = array_search($sort,$result);
         array_push($return_result,$result1[$array_search]);
     }
-    // $array_search = array_search($num_max,$result);
-    // $return_result = $result1[$array_search];
     $con->db_close(); //close database
     unset($con); // remove class variable
     return $return_result;

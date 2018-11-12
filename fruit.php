@@ -1,4 +1,5 @@
 <?php
+
 header('Access-Control-Allow-Origin: *'); 
 header('Access-Control-Allow-Methods: POST, GET, OPTION, PUT, DELETE');
 header('Access-Control-Allow-Headers: Content-Type'); 
@@ -41,5 +42,5 @@ $menu_food = filter_food($menu_filter_food);
 //echo Json_encode($menu_food, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
  $fruit = filter_fruit($measure_result_fruit);
  $menu_filter_fruit =  sort_fruit($measure_result_fruit);
-echo Json_encode($menu_food, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
+echo Json_encode($menu_filter_fruit, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
 // print_r($menu_food);

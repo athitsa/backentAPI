@@ -49,7 +49,7 @@ function meansure_disease($info_disease){
 
     arsort($result);
     $return_result = [];
-    $result_sort = array_slice($result, 0, 5);
+    $result_sort = array_slice($result, 0, 3);
     foreach($result_sort as $sort){
         $array_search = array_search($sort,$result);
         array_push($return_result,$result1[$array_search]);

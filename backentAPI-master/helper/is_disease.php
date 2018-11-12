@@ -11,7 +11,7 @@ function is_disease($list_disease){
         if(empty($result)){
             array_push($list_result['deny'], $key); //list_result['deny'] = $key;
         }else{
-            array_push($list_result['allow'], [$key, $result[0]['nutrients'],$result[0]['not_ingredients']]);
+            array_push($list_result['allow'], [$key, $result[0]['nutrients']]);
             
         }
     }
