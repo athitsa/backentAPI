@@ -7,10 +7,10 @@ services:
     volumes:
       - ./var/mysql:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE: db
-      - MYSQL_USER: ci2
-      - MYSQL_USERNAME: root
-      - MYSQL_ROOT_PASSWORD: 1234ci2
+      MYSQL_DATABASE: db
+      MYSQL_USER: ci2
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: 1234ci2
   webserver:
     image: sirawat21/php
     ports:
@@ -31,6 +31,6 @@ services:
     links:
       - database
     environment:
-      - MYSQL_USERNAME: root
-      - MYSQL_ROOT_PASSWORD: 1234ci2
-      - PMA_HOST: database
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: 1234ci2
+      PMA_HOST: database
