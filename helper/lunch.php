@@ -1,7 +1,7 @@
 <?php
-function breakfast($menu_food){
+function lunch($menu_food){
     $food = array();
-    $result_sort = array_slice($menu_food, 0, 3);
+    $result_sort = array_slice($menu_food, 3, 3);
    
     // return $food;
     $a = [];

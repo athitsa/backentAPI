@@ -12,7 +12,7 @@ require('./helper/filter_food.php');
 require('./helper/filter_fruit.php');
 require('./helper/meansure_fruit.php');
 require('./helper/sort_fruit.php');
-require('./helper/breakfast.php');
+require('./helper/lunch.php');
 
 /* check disease */
 /*
@@ -40,7 +40,7 @@ for($index=0; $index < count($list_disease["allow"]); $index++){
 }
 $menu_filter_food = menu_maker($measure_result);
 $menu_food = filter_food($menu_filter_food);
-$fod = breakfast($menu_food);
+$fod = lunch($menu_food);
 //echo Json_encode($menu_food, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
  $fruit = filter_fruit($measure_result_fruit);
  $menu_filter_fruit =  sort_fruit($measure_result_fruit);

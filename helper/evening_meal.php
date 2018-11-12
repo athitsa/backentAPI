@@ -1,7 +1,7 @@
 <?php
-function breakfast($menu_food){
+function evening_meal($menu_food){
     $food = array();
-    $result_sort = array_slice($menu_food, 0, 3);
+    $result_sort = array_slice($menu_food, 6, 3);
    
     // return $food;
     $a = [];
@@ -11,6 +11,9 @@ function breakfast($menu_food){
             "menu" => $data['menu'],
             "ingredients" => $data['ingre']
         ]);
+        // $a = $data['menu'];
+        // $b[] =  $data['ingre'];   
     }
+   
     return $food;
 }
