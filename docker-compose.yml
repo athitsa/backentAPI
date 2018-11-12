@@ -14,6 +14,7 @@ services:
   webserver:
     image: sirawat21/php
     command: apt-get install pdo-mysql php5-mysql
+    command: systemctl restart apache2
     ports:
       - "8888:80"
     volumes:
