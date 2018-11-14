@@ -16,7 +16,10 @@ $dbName = "athitb";
  }
 $menu_food = [];
 foreach($datas as $data){
-    $menu_food[] = $data;
+    $menu_food[] = ["name"=>$data['name'],"imgs"=>'imgs/3.png','ingre'=>$data['ingre']];
 }
+$menu = ["full_menu_food" =>$menu_food];
+// echo "<img src='imgs/2.png'>";
 
-echo Json_encode($menu_food, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
+
+  echo Json_encode($menu, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);

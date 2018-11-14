@@ -16,8 +16,9 @@ $dbName = "athito";
  }
 $menu_food = [];
 foreach($datas as $data){
-    $menu_food[] = $data;
+    
+    $menu_food[] = ['Disease'=>$data['Disease'],'nutrients'=>$data['nutrients'],'not_ingredients'=>$data['not_ingredients'],'image'=>'imgs/2.png'];
 }
 $disease = ["full_disease" =>$menu_food];
-
+// echo "<img src='imgs/2.png'>";
 echo Json_encode($disease, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
