@@ -12,13 +12,11 @@ services:
       MYSQL_USERNAME: root
       MYSQL_ROOT_PASSWORD: 1234ci2
   webserver:
-    # image: sirawat21/php
-    image: mobilesnapp/apache-php5 
+    image: sirawat21/php
     ports:
       - "8888:80"
     volumes:
       - ./:/var/www/html
-    working_dir: /var/www/html
     depends_on:
       - database
     links:

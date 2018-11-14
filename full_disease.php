@@ -18,5 +18,6 @@ $menu_food = [];
 foreach($datas as $data){
     $menu_food[] = $data;
 }
+$disease = ["full_disease" =>$menu_food];
 
-echo Json_encode($menu_food, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
+echo Json_encode($disease, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
